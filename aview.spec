@@ -1,13 +1,14 @@
 Summary:	ASCII-Art image browser and animation player
-Summary(pl):	Przegl±darka obrazków i animacji w formacie ASCII
+Summary(pl):	Przegl±darka obrazków i animacji jako ASCII Art
 Name:		aview
-Version:	1.2
-Release:	6
+Version:	1.3.0rc1
+Release:	1
 License:	GPL
 Group:		Applications/Graphics
+Group(de):	Applikationen/Grafik
 Group(pl):	Aplikacje/Grafika
-Source0:	ftp://ftp.ta.jcu.cz/pub/aa/%{name}-%{version}.tar.gz
-Patch:		aview-no-internal-str.patch
+Source0:	ftp://download.sourceforge.net/pub/sourceforge/aa-project/%{name}-%{version}.tar.gz
+URL:		http://aa-project.sourceforge.net/aview/
 BuildRequires:	aalib-devel
 BuildRequires:	gpm-devel
 BuildRequires:	ncurses-devel >= 5.0
@@ -37,8 +38,7 @@ etc...), mo¿liwo¶æ ustawienia kontrastu, jasno¶ci i nasycenia, zoom,
 trzy poziomy ditheringu, itp. oraz ukryte opcje "bonusowe" :)
 
 %prep
-%setup -q
-%patch -p1
+%setup -q -n %{name}-1.3.0
 
 %build
 %configure
@@ -49,14 +49,18 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_bindir}
 
 %{__make} install \
-	bindir=$RPM_BUILD_ROOT%{_bindir}
+	DESTDIR=$RPM_BUILD_ROOT
 
-gzip -9nf README ANNOUNCE README.flip ChangeLog TODO
+# groff link instead of full copy
+echo ".so aview.1" > $RPM_BUILD_ROOT%{_mandir}/man1/asciiview.1
+
+gzip -9nf ANNOUNCE ChangeLog AUTHORS NEWS README README.flip TODO
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc {README,ANNOUNCE,README.flip,ChangeLog,TODO}.gz
+%doc *.gz
 %attr(755,root,root) %{_bindir}/*
+%{_mandir}/man1/*
