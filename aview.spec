@@ -38,8 +38,7 @@ ditheringu, itp. oraz ukryte opcje "bonusowe" :)
 %setup -q
 
 %build
-%configure \
-	--prefix=%{_prefix}
+%configure
 make
 
 %install
