@@ -6,6 +6,7 @@ Release:	2
 License:	GPL
 Group:		Applications/Graphics
 Source0:	http://dl.sourceforge.net/aa-project/%{name}-%{version}.tar.gz
+# Source0-md5:	093f298e7787591e229b59d039c72f4d
 URL:		http://aa-project.sourceforge.net/aview/
 BuildRequires:	XFree86-libs
 BuildRequires:	autoconf
