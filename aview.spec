@@ -16,7 +16,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 aview is an high quality ascii-art image(pnm) browser and
-animation(fli/flc) player usefull especially with lynx browser.
+animation(fli/flc) player useful especially with lynx browser.
 
 Supports: stdio, curses, slang, X11, gpm, linux-console.
 
