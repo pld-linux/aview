@@ -2,14 +2,14 @@ Summary: 	ASCII-Art image browser and animation player
 Summary(pl):	Przegl±darka obrazków i animacji w formacie ASCII
 Name: 		aview
 Version: 	1.2
-Release: 	2
+Release: 	3
 Copyright: 	GPL
 Group: 		Applications/Graphics
 Group(pl):	Aplikacje/Grafika
 Source: 	ftp://ftp.ta.jcu.cz/pub/aa/%{name}-%{version}.tar.gz
 BuildRequires:	aalib-devel
 BuildRequires:	gpm-devel
-BuildRequires:	ncurses-devel
+BuildRequires:	ncurses-devel >= 5.0
 BuildRequires:	XFree86-libs
 BuildRoot:	/tmp/%{name}-%{version}-root
 
