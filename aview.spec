@@ -57,9 +57,3 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc {README,ANNOUNCE,README.flip,ChangeLog,TODO}.gz
 %attr(755,root,root) %{_bindir}/*
-
-%changelog
-* Mon Jun 21 1999 Piotr Czerwiñski <pius@pld.org.pl> 
-  [1.2-2]
-- spec file rewritten for PLD use,
-- based on spec file from unknown source.
