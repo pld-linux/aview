@@ -9,6 +9,7 @@ Group(de):	Applikationen/Grafik
 Group(pl):	Aplikacje/Grafika
 Source0:	ftp://download.sourceforge.net/pub/sourceforge/aa-project/%{name}-%{version}.tar.gz
 URL:		http://aa-project.sourceforge.net/aview/
+BuildRequires:	autoconf
 BuildRequires:	aalib-devel
 BuildRequires:	gpm-devel
 BuildRequires:	ncurses-devel >= 5.0
