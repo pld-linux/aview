@@ -5,13 +5,13 @@ Version:	1.3.0rc1
 Release:	2
 License:	GPL
 Group:		Applications/Graphics
-Source0:	ftp://download.sourceforge.net/pub/sourceforge/aa-project/%{name}-%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/aa-project/%{name}-%{version}.tar.gz
 URL:		http://aa-project.sourceforge.net/aview/
+BuildRequires:	XFree86-libs
 BuildRequires:	autoconf
 BuildRequires:	aalib-devel
 BuildRequires:	gpm-devel
 BuildRequires:	ncurses-devel >= 5.0
-BuildRequires:	XFree86-libs
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
