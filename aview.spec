@@ -46,7 +46,7 @@ make
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_bindir}
 
-make install \
+%{__make} install \
 	bindir=$RPM_BUILD_ROOT%{_bindir}
 
 gzip -9nf README ANNOUNCE README.flip ChangeLog TODO
