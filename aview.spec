@@ -8,9 +8,8 @@ Group:		Applications/Graphics
 Source0:	http://dl.sourceforge.net/aa-project/%{name}-%{version}.tar.gz
 # Source0-md5:	093f298e7787591e229b59d039c72f4d
 URL:		http://aa-project.sourceforge.net/aview/
-BuildRequires:	XFree86-libs
-BuildRequires:	autoconf
 BuildRequires:	aalib-devel
+BuildRequires:	autoconf
 BuildRequires:	gpm-devel
 BuildRequires:	ncurses-devel >= 5.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
