@@ -40,7 +40,7 @@ trzy poziomy ditheringu, itp. oraz ukryte opcje "bonusowe" :)
 %setup -q -n %{name}-1.3.0
 
 %build
-autoconf
+%{__autoconf}
 %configure
 %{__make}
 
