@@ -11,7 +11,7 @@ BuildRequires:	aalib-devel
 BuildRequires:	gpm-devel
 BuildRequires:	ncurses-devel >= 5.0
 BuildRequires:	XFree86-libs
-BuildRoot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 aview is an high quality ascii-art image(pnm) browser and
