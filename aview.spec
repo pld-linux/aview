@@ -41,7 +41,6 @@ trzy poziomy ditheringu, itp. oraz ukryte opcje "bonusowe" :)
 %patch -p1
 
 %build
-LDFLAGS="-s"; export LDFLAGS
 %configure
 %{__make}
 
