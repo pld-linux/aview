@@ -7,10 +7,10 @@ Copyright: 	GPL
 Group: 		Applications/Graphics
 Group(pl):	Aplikacje/Grafika
 Source: 	ftp://ftp.ta.jcu.cz/pub/aa/%{name}-%{version}.tar.gz
-BuildPrereq:	aalib-devel
-BuildPrereq:	gpm-devel
-BuildPrereq:	ncurses-devel
-BuildPrereq:	XFree86-libs
+BuildRequires:	aalib-devel
+BuildRequires:	gpm-devel
+BuildRequires:	ncurses-devel
+BuildRequires:	XFree86-libs
 BuildRoot:	/tmp/%{name}-%{version}-root
 
 %description
