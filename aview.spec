@@ -5,8 +5,6 @@ Version:	1.3.0rc1
 Release:	1
 License:	GPL
 Group:		Applications/Graphics
-Group(de):	Applikationen/Grafik
-Group(pl):	Aplikacje/Grafika
 Source0:	ftp://download.sourceforge.net/pub/sourceforge/aa-project/%{name}-%{version}.tar.gz
 URL:		http://aa-project.sourceforge.net/aview/
 BuildRequires:	autoconf
