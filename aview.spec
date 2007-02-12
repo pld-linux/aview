@@ -1,5 +1,5 @@
 Summary:	ASCII-Art image browser and animation player
-Summary(pl):	Przegl±darka obrazków i animacji jako ASCII Art
+Summary(pl.UTF-8):   PrzeglÄ…darka obrazkÃ³w i animacji jako ASCII Art
 Name:		aview
 Version:	1.3.0rc1
 Release:	5
@@ -25,15 +25,15 @@ Contrast, Bright, Gamma control,Image zooming/unzooming, Three
 dithering modes, Hidden "bonus" features :), Inversion, Support for
 bright, dim, inverse attributes/extended character set
 
-%description -l pl
-aview jest wysokiej jako¶ci przegl±dark± obrazków (pnm) i animacji
-(fli/flc) w formacie ASCII, u¿yteczn± zw³aszcza w po³±czeniu z
-przegl±dark± lynx.
+%description -l pl.UTF-8
+aview jest wysokiej jakoÅ›ci przeglÄ…darkÄ… obrazkÃ³w (pnm) i animacji
+(fli/flc) w formacie ASCII, uÅ¼ytecznÄ… zwÅ‚aszcza w poÅ‚Ä…czeniu z
+przeglÄ…darkÄ… lynx.
 
 Wspiera: stdio, curses, slang, X11, gpm, linux-console.
 
 Opcje: zapisywanie w wielu formatach (html, txt, ansi, more/less,
-etc...), mo¿liwo¶æ ustawienia kontrastu, jasno¶ci i nasycenia, zoom,
+etc...), moÅ¼liwoÅ›Ä‡ ustawienia kontrastu, jasnoÅ›ci i nasycenia, zoom,
 trzy poziomy ditheringu, itp. oraz ukryte opcje "bonusowe" :)
 
 %prep
