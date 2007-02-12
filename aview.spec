@@ -1,5 +1,5 @@
 Summary:	ASCII-Art image browser and animation player
-Summary(pl.UTF-8):   Przeglądarka obrazków i animacji jako ASCII Art
+Summary(pl.UTF-8):	Przeglądarka obrazków i animacji jako ASCII Art
 Name:		aview
 Version:	1.3.0rc1
 Release:	5
