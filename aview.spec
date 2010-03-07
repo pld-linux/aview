@@ -2,11 +2,12 @@ Summary:	ASCII-Art image browser and animation player
 Summary(pl.UTF-8):	Przeglądarka obrazków i animacji jako ASCII Art
 Name:		aview
 Version:	1.3.0rc1
-Release:	5
-License:	GPL
+Release:	6
+License:	GPL v2
 Group:		Applications/Graphics
 Source0:	http://dl.sourceforge.net/aa-project/%{name}-%{version}.tar.gz
 # Source0-md5:	093f298e7787591e229b59d039c72f4d
+Patch0:		asciiview-lame_bashizm.patch
 URL:		http://aa-project.sourceforge.net/aview/
 BuildRequires:	aalib-devel
 BuildRequires:	autoconf
@@ -38,6 +39,7 @@ trzy poziomy ditheringu, itp. oraz ukryte opcje "bonusowe" :)
 
 %prep
 %setup -q -n %{name}-1.3.0
+%patch0 -p0
 
 %build
 %{__autoconf}
@@ -59,6 +61,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc ANNOUNCE ChangeLog AUTHORS NEWS README README.flip TODO
+%doc ANNOUNCE AUTHORS ChangeLog NEWS README README.flip TODO
 %attr(755,root,root) %{_bindir}/*
 %{_mandir}/man1/*
