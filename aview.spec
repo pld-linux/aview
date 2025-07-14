@@ -39,7 +39,7 @@ trzy poziomy ditheringu, itp. oraz ukryte opcje "bonusowe" :)
 
 %prep
 %setup -q -n %{name}-1.3.0
-%patch0 -p0
+%patch -P0 -p0
 
 %build
 %{__autoconf}
