@@ -1,0 +1,28 @@
+--- aview-1.3.0/main.c.orig
++++ aview-1.3.0/main.c
+@@ -1,3 +1,5 @@
++#include <stdlib.h>
++#include <string.h>
+ #include <aalib.h>
+ #include "image.h"
+ #include "ui.h"
+--- aview-1.3.0/flip.c.orig
++++ aview-1.3.0/flip.c
+@@ -7,6 +7,8 @@
+
+ #include <stdlib.h>
+ #include <stdio.h>
++#include <string.h>
++#include <ctype.h>
+ #include <sys/time.h>
+ #include <unistd.h>
+ #include <aalib.h>
+@@ -14,6 +16,8 @@
+ #include "general.h"
+ #include "fli.h"
+
++int f_getkey(void);
++
+ #define NAMELEN 256
+
+ struct OPTIONS {
